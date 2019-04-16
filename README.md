@@ -10,5 +10,5 @@ A React Native Movie app based on themoviedb.org API
 ![Pic1](https://github.com/yihuashub/PopcornMovie/blob/master/screensorts/short1.PNG)
 ![Pic2](https://github.com/yihuashub/PopcornMovie/blob/master/screensorts/short2.PNG)
 
-## Licence
-MIT
+## License
+This project is under [MIT](https://github.com/yihuashub/PopcornMovie/blob/master/LICENSE) license.
