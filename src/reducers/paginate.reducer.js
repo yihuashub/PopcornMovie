@@ -1,0 +1,85 @@
+import union from 'lodash/union'
+
+// Creates a reducer managing pagination, given the action types to handle,
+// and a function telling how to extract the key from an action.
+const paginateReducer = ({ types, mapActionToKey }) => {
+  if (!Array.isArray(types) || types.length !== 3) {
+    throw new Error('Expected types to be an array of three elements.')
+  }
+  if (!types.every(t => typeof t === 'string')) {
+    throw new Error('Expected types to be strings.')
+  }
+  if (typeof mapActionToKey !== 'function') {
+    throw new Error('Expected mapActionToKey to be a function.')
+  }
+
+  const [ requestType, successType, failureType ] = types
+
+  const updatePagination = (state = {
+    isFetching: false,
+    ids: [],
+    totalCount:0,
+    offset:0,
+  }, action) => {
+    switch (action.type) {
+      case requestType:
+        return {
+          ...state,
+          isFetching: true
+        }
+      case successType:
+          if(action.response.result.articles){
+            return {
+              ...state,
+              isFetching: false,
+              ids: union(state.ids, action.response.result.articles),
+              totalCount: (action.response.result.articlesCount) || 1,
+              offset: action.offset
+            }
+          } else if (action.response.result.projects) {
+            return {
+              ...state,
+              isFetching: false,
+              ids: union(state.ids, action.response.result.projects),
+              totalCount: (action.response.result.projectsCount) || 1,
+              offset: action.offset
+            }
+          } else {
+            return {
+              ...state,
+              isFetching: false,
+              ids: union(state.ids, action.response.result),
+              offset: action.offset
+            }
+          }
+      case failureType:
+        return {
+          ...state,
+          isFetching: false
+        }
+      default:
+        return state
+    }
+  }
+
+return (state = {}, action) => {
+  // Update pagination by key
+  switch (action.type) {
+    case requestType:
+    case successType:
+    case failureType:
+      const key = mapActionToKey(action)
+      if (typeof key !== 'string') {
+        throw new Error('Expected key to be a string.' + key)
+      }
+      return {
+        ...state,
+        [key]: updatePagination(state[key], action)
+      }
+    default:
+      return state
+  }
+}
+}
+
+export default paginateReducer

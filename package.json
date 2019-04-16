@@ -7,8 +7,28 @@
     "test": "jest"
   },
   "dependencies": {
-    "react": "16.8.3",
-    "react-native": "0.59.4"
+    "axios": "^0.18.0",
+    "humps": "^2.0.1",
+    "native-base": "^2.12.1",
+    "normalizr": "^3.3.0",
+    "react": "16.8.6",
+    "react-art": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-native": "0.59.4",
+    "react-native-blur": "^3.2.2",
+    "react-native-gesture-handler": "^1.1.0",
+    "react-native-image-view": "^2.1.4",
+    "react-native-linear-gradient": "^2.5.4",
+    "react-native-read-more-text": "^1.1.0",
+    "react-native-swiper": "^1.5.14",
+    "react-native-vector-icons": "^6.4.2",
+    "react-native-web": "^0.11.2",
+    "react-native-youtube": "^1.1.0",
+    "react-navigation": "^3.8.1",
+    "react-redux": "^7.0.2",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "superagent": "^5.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
@@ -16,7 +36,7 @@
     "babel-jest": "^24.7.1",
     "jest": "^24.7.1",
     "metro-react-native-babel-preset": "^0.53.1",
-    "react-test-renderer": "16.8.3"
+    "react-test-renderer": "16.8.6"
   },
   "jest": {
     "preset": "react-native"
