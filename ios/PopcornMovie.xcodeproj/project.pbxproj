@@ -18,6 +18,7 @@
 		0A0E3BE557184CF989614B32 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8D88F3F5CE04848967E68D0 /* FontAwesome5_Brands.ttf */; };
 		0A6FC7C1DEC44EA0A500922A /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B796FBB8ED1A4C20AD16A7B6 /* Ionicons.ttf */; };
 		0FF8595422658D410026EC72 /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF8595122658D260026EC72 /* libRNGestureHandler.a */; };
+		0FF859A42265A9310026EC72 /* YTPlayerView-iframe-player.html in Resources */ = {isa = PBXBuildFile; fileRef = 0FF859752265A9310026EC72 /* YTPlayerView-iframe-player.html */; };
 		11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
@@ -418,6 +419,7 @@
 		09355EF214294C25A8488672 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		0DDA7C880E8C4DE08125A3E0 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/native-base/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		0FF8594B22658D260026EC72 /* RNGestureHandler.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNGestureHandler.xcodeproj; path = "../node_modules/react-native-gesture-handler/ios/RNGestureHandler.xcodeproj"; sourceTree = "<group>"; };
+		0FF859752265A9310026EC72 /* YTPlayerView-iframe-player.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = "YTPlayerView-iframe-player.html"; path = "../node_modules/react-native-youtube/assets/YTPlayerView-iframe-player.html"; sourceTree = "<group>"; };
 		12CD6FBC38CE46E9A6D44D0C /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
@@ -817,6 +819,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				0FF859752265A9310026EC72 /* YTPlayerView-iframe-player.html */,
 				13B07FAE1A68108700A75B9A /* PopcornMovie */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* PopcornMovieTests */,
@@ -1391,6 +1394,7 @@
 				42F6DCDFF243422B93CBB6DE /* AntDesign.ttf in Resources */,
 				146DA623C0D148EB9BA90A38 /* Entypo.ttf in Resources */,
 				770B0FCD82FE467A9D4D1921 /* EvilIcons.ttf in Resources */,
+				0FF859A42265A9310026EC72 /* YTPlayerView-iframe-player.html in Resources */,
 				7C6783C002B645C9BBA268E9 /* Feather.ttf in Resources */,
 				6958C0B1EF22401B8A760327 /* FontAwesome.ttf in Resources */,
 				0A0E3BE557184CF989614B32 /* FontAwesome5_Brands.ttf in Resources */,
