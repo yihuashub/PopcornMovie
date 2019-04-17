@@ -6,7 +6,6 @@ import YihuaApi from '../middleware/YihuaApi'
 import GithubApi from '../middleware/GithubApi'
 
 import rootReducer from '../reducers/'
-import DevTools from '../views/DevTools'
 
 const configureStore = preloadedState => {
   const middlewares = [YihuaApi, GithubApi]
