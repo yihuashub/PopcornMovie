@@ -175,7 +175,8 @@ class MovieListScreen extends React.Component {
                                 <Text note numberOfLines={1}>{info.original_title}</Text>
                                 </Body>
                                 <Right>
-                                    <Button transparent>
+                                    <Button transparent
+                                            onPress={() => this.props.navigation.navigate("MovieScreen", {id: info.id})}>
                                         <Text>View</Text>
                                     </Button>
                                 </Right>

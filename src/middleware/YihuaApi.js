@@ -81,7 +81,8 @@ export default store => next => action => {
     }
 
     let {endpoint} = callAPI
-    const token = window.localStorage.getItem('jwt');
+    //const token = window.localStorage.getItem('jwt');
+    const token = null;
     const {schema, method, parameter, auth, types} = callAPI
 
     if (typeof endpoint === 'function') {
